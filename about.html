@@ -3,25 +3,34 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/logo.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>MBAsians: About Us</title>
 	</head>
 	<body>
-		<nav>
-			<ul class="nav_links">
-				<li class="nav_item"><a href = "index.html">Home</a></li>
-				<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
-				<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
-				<li class="nav_current"><a href = "about.html">About Mbasians</a></li>
-			</ul>
-		</nav>
-
-		<header class="headline">
-			<h1>About MBAsians</h1>
+		<div class="skip"><a href="#main">Skip to Main Content</a></div>
+		<header class="header" id="header">
+			<img src="images/header_logo.png" alt="logo" id = "logo">
+			<nav>
+				<ul class="nav_links" id="links">
+					<li class="nav_item"><a href = "index.html">Home</a></li>
+					<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
+					<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
+					<li class="nav_current"><a href = "about.html">About</a></li>
+				</ul>
+			</nav>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction2()" aria-label = "open the menu">
+				<i class="fa fa-bars" aria-hidden="true"> </i>
+			</a>
 		</header>
 
-	<main class="container">
+
+	<main class="container" id="main">
+		<div class = "headline">
+			<h1>About MBAsians</h1>
+		</div>
 		<div class="about">
 			<h2>MBAsians</h2>
 			<p>MBAsians is a podcast for and by Asian international students currently earning or applying to MBA programs in the US. Hosts Jacob Yu and Jay Park share actionable tips and recommendations to make your MBA journey more pleasant and successful by interviewing current and recent MBA graduates from various programs. MBAsians will feature deep dive discussions focusing on diverse parts of the MBA experience, academic, professional, and social, covering important topics such as language and cultural differences, networking and managing relationships, and building a community of support.</p>
@@ -41,11 +50,12 @@
 			<h2>Our Goal</h2>
 			<p>Leveraging this podcast, we’re going to build up and strengthen Asian MBA community, helping each other.</p>
 		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
 	</main>
 
 		<footer>
 			<p>Jacob Yu &copy; 2020</p>
 		</footer>
-
+		<script src ="js/myjs.js"></script>
 	</body>
 </html>

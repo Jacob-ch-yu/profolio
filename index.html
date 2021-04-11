@@ -3,33 +3,40 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/logo.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>MBAsians: The Asian MBA Podcast</title>
 	</head>
 	<body>
-		<nav>
-			<ul class="nav_links">
-				<li class="nav_current"><a href = "index.html">Home</a></li>
-				<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
-				<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
-				<li class="nav_item"><a href = "about.html">About Mbasians</a></li>
-			</ul>
-		</nav>
+		<div class="skip"><a href="#main">Skip to Main Content</a></div>
+		<header class="header" id="header">
+			<img src="images/header_logo.png" alt="logo" id = "logo">
+			<nav>
+				<ul class="nav_links" id="links">
+					<li class="nav_current"><a href = "index.html">Home</a></li>
+					<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
+					<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
+					<li class="nav_item"><a href = "about.html">About</a></li>
+				</ul>
+			</nav>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction2()" aria-label = "open the menu">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
+		</header>
 
-		<header class="headline">
+	<main class="container" id="main"></main>
+		<div class = "headline">
 			<h1>Welcome to MBAsians</h1>
 			<p>This is a podcast for and by Asian international students currently earning or applying to MBA programs in the US.</p>
-		</header>
-	<main class="container">
-		<div class="recentepisodes">
+		</div>
+
+		<div class="recentepisodes" id="recentepisodes">
 			<h2>Recent Episodes</h2>
-			<h3>Episode 1</h3>
-			<h3>Episode 2</h3>
-			<h3>Episode 3</h3>
-			<h3>Episode 4</h3>
-			<h3>Episode 5</h3>
-			<h3>Episode 6</h3>
+			<div class= "recentep" id="recentep">
+
+			</div>
 		</div>
 		
 		<div class="platforms">
@@ -40,11 +47,15 @@
 			<h3><a href="https://www.amazon.com/MBAsians-The-Asian-MBA-Podcast/dp/B08JJT9LC2"target="_blank">Amazon</a></h3>
 		</div>
 
-
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
 	</main>
 
 		<footer>
 			<p>Jacob Yu &copy; 2020</p>
 		</footer>
+	<script src ="js/myjs.js"></script>
+	<script>
+	document.getElementById("recentep").innerHTML=localStorage.getItem("fromepisodes");
+	</script>
 </body>
 </html>
