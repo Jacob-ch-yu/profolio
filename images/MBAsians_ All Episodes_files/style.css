@@ -1,0 +1,583 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip a{
+    background: white;
+    color:black;
+    font-weight:bold;
+    left: 0;
+    /* padding: 7px; */
+    /* -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out; */
+    z-index: 999;
+    position: absolute;
+    top: -50px;
+   
+  }
+  
+  .skip a:focus{
+    position: relative;
+    top:0px;
+  }
+
+
+
+/* header{ */
+    /* z-index: 999;  */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* background:rgb(0,90,112); */
+    
+/* } */
+
+
+/* header{
+    overflow: hidden;
+    position: relative;
+} */
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  } */
+
+
+
+/* header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    padding: 5px;  
+    
+} */
+
+/* .nav_links{
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+} */
+
+
+/* .nav_links{
+    display: none;
+} */
+
+
+/* .nav_item{
+    display:block;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    border: solid 3px rgb(182, 41, 41);
+    
+  } */
+
+/* header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+/* 
+.nav_item :hover{ */
+    /* display:block; */
+    /* background:white;
+    color: rgb(0,90,112); */
+    /* font-weight: bold;
+    text-align: center; */
+
+    /* border: solid 3px rgb(182, 41, 41); */
+/* } */
+
+/* nav a{
+    color: white;
+    font-size: 11pt;
+    text-decoration: none;
+}
+
+.nav_current{
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid white;
+    line-height: 27px;
+}
+.nav_current a{
+    color:white;
+    font-weight: bold;
+} */
+
+
+h2{
+    color:rgb(1, 52, 65);
+}
+.header{
+    z-index: 2; 
+    overflow:hidden;
+    background-color: rgb(0,90,112);
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+.sticky + .container {
+    padding-top:50px;
+}
+
+.nav_links{
+    display:none;
+}
+
+
+.header a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display:block;
+    font-weight: 0;
+}
+
+
+.nav_item, .nav_current{
+    text-align: center;
+}
+
+.nav_current a{
+    background: white;
+    color:rgb(0,90,112);
+    font-weight:bold;
+}
+.header .icon{
+    display:block;
+    font-size: 29px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:  rgb(1, 73, 91);    
+}
+
+
+
+.header a:hover{
+    background-color:white;
+    color:rgb(1, 73, 91);    
+}
+
+.nav_item :hover{
+    background-color:white;
+    color:rgb(0,90,112);
+    font-weight: bold;
+}
+
+
+.header img{
+    display:block;
+    height: 36px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 11px 16px;
+}
+
+.headline{
+    background-color: rgb(12, 121, 103);
+    color: white;
+    font-size: 25pt;
+    padding: 60px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+/* .sticky + .container {
+    padding-top:160px;
+} */
+
+
+.headline h1{
+    margin-bottom:0px;
+    font-weight:200;
+    
+}
+
+.headline p{
+    font-size: 10pt;
+    margin-top:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.3;
+}
+
+.container{
+    background-color:rgb(228, 227, 227);
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.about h2, .mission h2, .purpose h2, .goal h2{
+    font-size: 15pt;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    /* border:solid 3px rgb(237, 6, 6); */
+}
+.about h2{
+    margin-top: 30px;
+}
+
+
+.about p, .mission p, .purpose p, .goal p{
+    /* max-width: 320px; */
+    font-size: 12pt;
+    margin-left: 20px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+    /* border:solid 3px rgb(237, 6, 6); */
+}
+.goal p{
+    margin-bottom: 30px;
+}
+
+.hostsimg{
+    height: 450px;
+    width: 450px;
+}
+.jacobyu h2, .jaypark h2{
+    font-size: 18pt;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.jacobyu p, .jaypark p{
+    font-size: 12pt;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: left;
+    margin-top:5px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.jaypark p{
+    margin-bottom: 30px;
+}
+
+/* .recent{
+    padding:0px;
+    margin-bottom: -30px;
+} */
+.allepisodes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recentepisodes h2, .allepisodes h2{
+    font-size: 20pt; 
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.recentepisodes .recent .ep, .episode .ep{
+    color:rgba(133, 133, 133, 0.824);
+    padding-left:15px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.recentepisodes .recent, .episode{
+    margin-top: 40px;
+    background-color:rgb(255, 255, 255);
+    /* box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 100px 80px rgba(0, 0, 0, 0.12); */
+    box-shadow: 
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.episodeimg{
+    height: 450px;
+    width: 450px;
+}
+
+audio{
+    /* background-color:white; */
+    width:420px;
+    height: 30px;
+    padding: 15px;
+}
+
+.recentepisodes .tittle,.allepisodes .tittle{
+    font-size: 13pt;
+    width:420px;
+    text-align: left;
+    margin-top:0;
+    margin-bottom:0;
+    padding-bottom:10px;
+    padding-left: 15px;
+    padding-right:15px;
+    
+}
+
+
+.recentepisodes .introduction,.allepisodes .introduction{
+    font-size: 11pt;
+    width:420px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* background-color: white; */
+    color: rgb(87, 86, 86);
+    text-align: left;
+    padding-left: 15px;
+    padding-right:15px;
+    line-height: 1.3;
+}
+
+.recentepisodes h4{
+    font-size: 12pt;
+}
+
+.recentepisodes {
+    font-size: 12pt;
+}
+
+
+
+.platforms{
+    display:flex;
+    flex-direction: column;
+}
+.platforms h2{
+    font-size: 20pt;
+    padding-top:30px;
+    /* padding-bottom: 5px; */
+
+}
+
+.platforms img{
+    width: 250px;
+    padding: 0px;
+    margin: 0px;
+}
+.recentepisodes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /* position: absolute;
+    width: 100%;
+    bottom:0; */
+}
+
+
+
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(28, 27, 27); 
+    opacity: 0.4;
+    color: white;
+    cursor: pointer;
+    padding: 15px; 
+    /* border-radius: 10px;  */
+    font-size: 17px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+/*test test test test test test test test test test test */
+/*test test test test test test test test test test test */
+
+
+
+@media all and (min-width: 800px){
+    .headline p{
+        font-size: 11pt;
+    }
+
+    .header{
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background:rgb(0,90,112);    
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .container {
+        padding-top:50px;
+    }
+
+    .header .icon{
+    display: none;
+    }
+    
+    .header img{
+        display:block;
+        height: 30px;
+        padding:8px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header a{
+         padding: 8px 16px;
+    }
+
+    .nav_links{
+        margin:0px;
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        min-width:500px;
+    }
+
+    .nav_item{
+        display:block;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        /* border: solid 3px rgb(182, 41, 41); */
+      }
+    
+    
+    nav a{
+        color: white;
+        font-size: 12pt;
+        text-decoration: none;
+    }
+    
+    .nav_current{
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid white;
+        line-height: 27px;
+    }
+    .nav_current a{
+        background-color:rgb(0,90,112);
+        color:white;
+        font-weight: bold;
+    }
+
+
+    .nav_current{
+        text-align: center;
+        line-height: 27px;
+    }
+    
+
+    .nav_item :hover{
+        display:block;
+        background:white;
+        color: rgb(0,90,112);
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        /* border: solid 3px rgb(182, 41, 41); */
+    }
+
+    
+    
+    .about p, .mission p, .purpose p, .goal p{
+        /* max-width: 320px; */  
+        margin-left: 100px;
+        margin-right: 100px;
+        /* border:solid 3px rgb(237, 6, 6); */
+    }
+   
+
+    .hostsimg{
+        height: 350px;
+        width: 350px;
+    }
+
+    .jacobyu p, .jaypark p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .recentep, .season2, .season1 {
+        max-width: 1110px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* border:solid 3px rgb(237, 6, 6); */
+
+    }
+
+    .recentepisodes .recent, .episode{
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .episodeimg{
+        height: 350px;
+        width: 350px;
+    }
+
+
+    .recentepisodes .tittle, .recentepisodes .introduction,.allepisodes .introduction, audio, .allepisodes .tittle{
+        width:320px;
+        /* background-color: white; */
+    }
+
+    #myBtn {
+       
+        bottom: 50px; 
+        right: 20px; 
+        padding: 15px; 
+        font-size: 17px; 
+    }
+  
+
+}
