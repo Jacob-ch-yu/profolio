@@ -7,8 +7,7 @@
 		<link rel="shortcut icon" href="images/logo.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		<title>MBAsians: Meet Our Hosts</title>
+		<title>MBAsians: The Asian MBA Podcast</title>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y014XK61D"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
@@ -24,33 +23,41 @@
 			<img src="images/header_logo.png" alt="logo" id = "logo">
 			<nav>
 				<ul class="nav_links" id="links">
-					<li class="nav_item"><a href = "home.html">Home</a></li>
-					<li class="nav_current"><a href = "hosts.html">Hosts</a></li>
+					<li class="nav_current"><a href = "home.html">Home</a></li>
+					<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
 					<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
 					<li class="nav_item"><a href = "about.html">About</a></li>
 					<li class="nav_item"><a href = "contact.html">Cantact Us</a></li>
 				</ul>
 			</nav>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction2()" aria-label = "open the menu">
-				<i class="fa fa-bars" aria-hidden="true"> </i>
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
-		</header>	
+		</header>
 
 	<main class="container" id="main">
 		<div class = "headline">
-			<h1>MBAsians Hosts</h1>
-		</div>
-		<div class="jacobyu">
-			<h2>Jacob Yu - Co-Host</h2>
-			<img src="images/hosts/jacob.jpg" class= "hostsimg" alt="Jacob Yu"/>
-			<p>Jacob, currently an MBA student at Michigan Ross, was born and raised in Taiwan. His career includes roles in marketing and public relations at a multinational technology company. At a young age, Jacob studied as a foreign exchange student in the US, understanding the challenges of being an international student. While studying at Ross, Jacob has witnessed peers and himself struggling in navigating MBA lives, motivating him to support and inspire others by making the MBAsian.</p>
+			<h1>Welcome to MBAsians</h1>
+			<p>This is a podcast for and by Asian international students currently earning or applying to MBA programs in the US.</p>
 		</div>
 
-		<div class="jaypark">
-			<h2>Jay Park - Co-Host</h2>
-			<img src="images/hosts/jay.jpg" class= "hostsimg" alt="Jay Park"/>
-			<p>Born and raised in S.Korea, Jay worked as a business developer and sales manager at an international trading company. Pursuing an MBA degree at Ross, University of Michigan, Jay tries to pivot into the tech industry as a product manager post-MBA. Jay experienced countless trials and errors from preparation for MBA to adapting himself into first-ever foreign country life, motivating him to make MBAsians. As an adventure enthusiast, Jay is still keeping going his life journey through MBA.</p>
+		<div class="recentepisodes" id="recentepisodes">
+			<h2>Recent Episodes</h2>
+			<div class= "recentep" id="recentep">
+
+			</div>
 		</div>
+		
+		<div class="platforms">
+			<h2>Podcast Platforms</h2>
+			<div class="platforms_img">
+				<a href="https://podcasts.apple.com/us/podcast/mbasians-the-asian-mba-podcast/id1525305388"><img src="images/apple.png" alt="apple"></a>
+				<a href="https://open.spotify.com/show/2rULzhtGJpoeQhgxWjSPEP"><img src="images/amazon.png" alt="amazon"></a>
+				<a href="https://www.amazon.com/MBAsians-The-Asian-MBA-Podcast/dp/B08JJT9LC2"><img src="images/spotify.png" alt="spotify"></a>
+				<a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy50cmFuc2lzdG9yLmZtL21iYXNpYW5z"><img src="images/google.png" alt="google"></a>
+			</div>
+		</div>
+
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
 	</main>
 
@@ -58,5 +65,8 @@
 			<p>Jacob Yu &copy; 2020</p>
 		</footer>
 	<script src ="js/myjs.js"></script>
+	<script>
+	document.getElementById("recentep").innerHTML=localStorage.getItem("fromepisodes");
+	</script>
 </body>
 </html>

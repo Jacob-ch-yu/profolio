@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="images/logo.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>MBAsians: About Us</title>
+		<title>MBAsians: Contact Us</title>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y014XK61D"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
@@ -26,8 +26,9 @@
 					<li class="nav_item"><a href = "home.html">Home</a></li>
 					<li class="nav_item"><a href = "hosts.html">Hosts</a></li>
 					<li class="nav_item"><a href = "episodes.html">Episodes</a></li>
-					<li class="nav_current"><a href = "about.html">About</a></li>
-					<li class="nav_item"><a href = "contact.html">Cantact Us</a></li>
+					<li class="nav_item"><a href = "about.html">About</a></li>
+					<li class="nav_current"><a href = "contact.html">Contact Us</a></li>
+					
 				</ul>
 			</nav>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction2()" aria-label = "open the menu">
@@ -38,28 +39,33 @@
 
 	<main class="container" id="main">
 		<div class = "headline">
-			<h1>About MBAsians</h1>
+			<h1>Contact Us</h1>
 		</div>
-		<div class ="aboutlayout">
-			<div class="about">
-				<h2>MBAsians</h2>
-				<p>MBAsians is a podcast for and by Asian international students currently earning or applying to MBA programs in the US. Hosts Jacob Yu and Jay Park share actionable tips and recommendations to make your MBA journey more pleasant and successful by interviewing current and recent MBA graduates from various programs. MBAsians will feature deep dive discussions focusing on diverse parts of the MBA experience, academic, professional, and social, covering important topics such as language and cultural differences, networking and managing relationships, and building a community of support.</p>
-			</div>
+        
+        <form action = "https://formspree.io/f/mwkappgo" method = "post">
+			<fieldset>
+				<legend><h2>Contact Form</h2></legend>
+				<div class="formcontainer">
+					<label for="uname"><b>Name</b></label><br>
+					<input type="text" placeholder="Enter Name" name="uname" id="uname" required><br>
+	
+					<label for="email"><b>email</b></label><br>
+					<input type="email" placeholder="Enter email" name="email" id="email" required><br>
+	
+					<label for="phone"><b>Phone</b></label><br>
+					<input type="tel" placeholder="Enter Phone" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
+	
+					<label for="subject"><b>Subject</b></label><br>
+					<input type="text" placeholder="Enter Subject" name="subject" id="subject" required><br>
+	
+					<label for="message"><b>Message</b></label><br>
+					<textarea placeholder="Enter Message" name="message" id="message" required></textarea><br>
 
-			<div class="mission">
-				<h2>Our Mission</h2>
-				<p>By sharing various difficulties and tips, we encourage incoming Asian students to be aware and prepared, getting most out of MBA life. </p>
-			</div>
+					<button type="submit"><b>Submit</b></button>
 
-			<div class="purpose">
-				<h2>Our Purpose</h2>
-				<p>As current MBA students, we’ve been through numerous difficulties. By sharing our experiences with the audience, we hope they have a fruitful MBA life in the US.</p>
-			</div>
-			
-			<div class="goal">
-				<h2>Our Goal</h2>
-				<p>Leveraging this podcast, we’re going to build up and strengthen Asian MBA community, helping each other.</p>
-			</div>
+				</div>	
+			</fieldset>
+		</form>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>	
 	</main>
 
