@@ -11,3 +11,16 @@ console.log(latest)
 
 
 
+
+// var myAudio = document.querySelectorAll(".episodeaudio");
+
+// if (myAudio.duration > 0 && !myAudio.paused) {
+//   document.querySelector(".episode").style.background = "lightblue";
+//   console.log("change color1")
+
+// }
+// else {
+//   document.querySelector(".episode").style.fontSize = "20pt";
+//   console.log("change color2")
+
+// }

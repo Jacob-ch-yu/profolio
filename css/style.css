@@ -8,15 +8,17 @@ html{
     font-weight:bold;
     left: 0;
     /* padding: 7px; */
-    -webkit-transition: top 10s ease-out;
-    transition: top 10s ease-out;
-    z-index: 1;
+    /* -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out; */
+    z-index: 999;
     position: absolute;
+    top: -50px;
    
   }
   
   .skip a:focus{
     position: relative;
+    top:0px;
   }
 
 
@@ -117,7 +119,7 @@ h2{
     color:rgb(1, 52, 65);
 }
 .header{
-    z-index: 999; 
+    z-index: 2; 
     overflow:hidden;
     background-color: rgb(0,90,112);
     position:relative;
@@ -225,7 +227,7 @@ h2{
 }
 
 .about h2, .mission h2, .purpose h2, .goal h2{
-    font-size: 15pt;
+    font-size: 20pt;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -258,7 +260,7 @@ h2{
     width: 450px;
 }
 .jacobyu h2, .jaypark h2{
-    font-size: 18pt;
+    font-size: 20pt;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -296,12 +298,12 @@ h2{
     margin-bottom: 0px;
 }
 
-.recentepisodes .recent h4, .episode h4{
+.recentepisodes .recent .ep, .episode .ep{
     color:rgba(133, 133, 133, 0.824);
     padding-left:15px;
     text-align: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .recentepisodes .recent, .episode{
     margin-top: 40px;
@@ -315,11 +317,73 @@ h2{
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+.recentepisodes .mobileintro ,.allepisodes .mobileintro{
+    font-size: 11pt;
+    width:420px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* background-color: white; */
+    color: rgb(87, 86, 86);
+    text-align: left;
+    padding-left: 15px;
+    padding-right:15px;
+    line-height: 1.3;
+}
+
 
 .episodeimg{
+    display:block;
     height: 450px;
     width: 450px;
 }
+
+/* .overlayeffect{
+    position:relative;
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right:0;
+    background-color:  rgb(12, 121, 103);
+    opacity: 0.95;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 0.5s ease;
+}
+
+.episode:hover .overlay{
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+}
+
+.recentep .recent:hover .overlay{
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+} */
+
+.recentepisodes .introduction,.allepisodes .introduction{
+    /* font-size: 15pt;
+    width:420px;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+    padding-right:15px;
+    line-height: 1.3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    display: none;
+}
+
 
 audio{
     /* background-color:white; */
@@ -341,18 +405,7 @@ audio{
 }
 
 
-.recentepisodes .introduction,.allepisodes .introduction{
-    font-size: 11pt;
-    width:420px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    /* background-color: white; */
-    color: rgb(87, 86, 86);
-    text-align: left;
-    padding-left: 15px;
-    padding-right:15px;
-    line-height: 1.3;
-}
+
 
 .recentepisodes h4{
     font-size: 12pt;
@@ -362,23 +415,34 @@ audio{
     font-size: 12pt;
 }
 
-
-
 .platforms{
+    /* background-color:white; */
+    border-top: 1px solid  rgb(138, 133, 133);
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+}
+.platforms_img{
     display:flex;
     flex-direction: column;
+    padding-bottom: 20px;
+    min-width: 450px;
+
 }
 .platforms h2{
-    font-size: 16pt;
-    padding-top:20px;
-    padding-bottom: 5px;
+    font-size: 20pt;
+    padding-top:30px;
+    padding-bottom: 20px;
+   
 
 }
 
-.platforms h3{
-    font-size: 12pt;
-    padding-top:10px;
-    padding-bottom: 5px;
+.platforms_img img{
+    width: 250px;
+    height: 70px;
+    object-fit: cover;
+
 }
 .recentepisodes{
     display: flex;
@@ -392,10 +456,12 @@ footer{
     display: grid;
     grid-column-start: 1;
     grid-column-end: 1;
-    background-color: black;
+    background-color: rgb(118, 118, 118);
     color: white;
     padding: 10px;
     text-align: center;
+    align-items: center;
+    height: 30px;
     /* position: absolute;
     width: 100%;
     bottom:0; */
@@ -428,6 +494,212 @@ footer{
 /*test test test test test test test test test test test */
 /*test test test test test test test test test test test */
 
+legend h2{
+    font-size: 20pt; 
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(1, 52, 65);
+    
+}
+.formcontainer{
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    text-align: left;
+    padding:30px;
+    margin-bottom:50px;
+    margin-top:30px;
+    box-shadow: 
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+   
+
+}
+
+label{
+    font-size: 12pt;
+    color:rgb(1, 73, 91);
+}
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+fieldset button{
+    background-color:rgb(12, 121, 103);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:100%;
+
+    
+}
+
+body, html {
+    height: 100%;
+  }
+
+.img1{
+    background-image: url("../images/hero/2.png");
+    min-height: 100%;
+    position:relative;
+    /* opacity:0.95; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 #herologo{
+    width:250px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation-name: logo_grow;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes logo_grow{
+    0% {
+      width:25px;
+      opacity: 0;
+    
+    }
+    100% {width:250px;
+    opacity: 1;
+    }
+
+  }
+@keyframes logo_grow{
+    0% {
+      width:25px;
+      opacity: 0;
+    
+    }
+    100% {width:250px;
+    opacity: 1;
+    }
+}
+
+
+
+
+.img1 .sd{
+    color: white;
+    font-size:12pt;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.first{
+    display: block;
+    background-color:white;
+    font-size:13pt;
+    padding: 50px 80px;
+    text-align:justify;
+    color: rgb(87, 86, 86);
+    line-height: 1.3;
+
+}
+.img2{
+    background-image: url("../images/hero/5.jpg");
+    min-height: 40%;
+    position:relative;
+    opacity:0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.incert{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:rgb(46, 46, 46);
+    color:#fff;
+    padding:8px;
+    font-size:15pt;
+    letter-spacing:5px;
+    line-height: 1.3;
+    text-align:center;
+
+}
+
+.second{
+    display: block;
+    background-color:rgb(1, 73, 91);  
+    font-size:13pt;
+    padding: 50px 80px;
+    text-align:justify;
+    color: white;
+    line-height: 1.3;
+
+}
+
+.img3{
+    background-image: url("../images/hero/6.jpg");
+    min-height: 40%;
+    position:relative;
+    opacity:0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:rgb(12, 121, 103);
+    color:#fff;
+    padding:20px;
+    font-size:15pt;
+    width:150px;
+    text-align: center;;
+    border: none;
+    cursor: pointer;
+    letter-spacing:3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cta:hover{
+    background-color:white;
+    color:rgb(12, 121, 103);
+    box-shadow:none;
+}
+
+@media (prefers-reduced-motion) {
+    #herologo {
+      animation-name: dissolve;
+    }
+  }
+  
 
 
 @media all and (min-width: 800px){
@@ -475,8 +747,9 @@ footer{
         flex-direction: row;
         align-items:center;
         justify-content: space-between;
-        min-width:500px;
+        min-width:600px;
     }
+    
 
     .nav_item{
         display:block;
@@ -526,6 +799,7 @@ footer{
     
     .about p, .mission p, .purpose p, .goal p{
         /* max-width: 320px; */  
+        font-size:13pt;
         margin-left: 100px;
         margin-right: 100px;
         /* border:solid 3px rgb(237, 6, 6); */
@@ -538,6 +812,7 @@ footer{
     }
 
     .jacobyu p, .jaypark p{
+        font-size:13pt;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -563,11 +838,73 @@ footer{
         width: 350px;
     }
 
+    .recentepisodes .mobileintro ,.allepisodes .mobileintro{
+        display:none;
+    }
 
-    .recentepisodes .tittle, .recentepisodes .introduction,.allepisodes .introduction, audio, .allepisodes .tittle{
+    .overlayeffect{
+        position:relative;
+    }
+
+    .overlay{
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right:0;
+        background-color:  rgb(12, 121, 103);
+        opacity: 0.95;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: 0.5s ease;
+    }
+    
+    .episode:hover .overlay{
+        cursor: pointer;
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .recentep .recent:hover .overlay{
+        cursor: pointer;
+        bottom: 0;
+        height: 100%;
+    }
+
+    .episode:focus-within .overlay{
+        bottom: 0;
+        height: 100%;
+    }
+    .recentep .recent:focus-within .overlay{
+        bottom: 0;
+        height: 100%;
+    }
+    
+    .recentepisodes .introduction,.allepisodes .introduction{
+        display:block;
+        font-size: 12pt;
+        width:350px;
+        position: absolute;
+        overflow: hidden;
+        color: white;
+        text-align: left;
+        padding-left: 15px;
+        padding-right:15px;
+        line-height: 1.3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .recentepisodes .tittle, .recentepisodes .introduction,.allepisodes .introduction, audio, .allepisodes .tittle, .recentepisodes .mobileintro, .allepisodes .mobileintro{
         width:320px;
         /* background-color: white; */
     }
+
+
+
+
 
     #myBtn {
        
@@ -576,6 +913,112 @@ footer{
         padding: 15px; 
         font-size: 17px; 
     }
-  
+    .platforms_img{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; 
+    }
+    .platforms_img img{
+        width: 250px;
+        height: 100%;
+        object-fit: fill;
+    }
 
+
+}
+
+
+@media all and (min-width: 1300px){
+    /* .about p {
+        margin-left: 250px;
+        margin-right: 250px;
+    } */
+    
+    
+    /* .mission p, .purpose p, .goal p{
+        margin-left: 20px;
+        margin-right: 20px;
+    } */
+
+
+    .aboutlayout{
+        display: grid;
+        grid-template-columns: 250px auto auto auto 250px;
+        grid-gap: 20px;
+
+    }
+    .about{
+        grid-column-start:2;
+        grid-column-end: 5;
+    }
+    .mission{
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+    .purpose{
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-row: 2;
+    }
+    .goal{
+        grid-column-start:4;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+
+   .about p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    .mission p, .purpose p, .goal p{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 50px
+    }
+
+
+    .jacobyu p, .jaypark p{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .recentep, .season1 {
+        max-width: 1280px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* border:solid 3px rgb(237, 6, 6); */
+
+    }
+
+    .season2{
+        min-width: 1280px;
+        display:flex;
+        flex-wrap: nowrap;
+    }
+
+
+    .episodeimg{
+        height: 300px;
+        width: 300px;
+    }
+
+    .recentepisodes .introduction,.allepisodes .introduction{
+        width:270px;
+    }
+
+    .recentepisodes .tittle, .recentepisodes .introduction,.allepisodes .introduction, audio, .allepisodes .tittle, .recentepisodes .mobileintro, .allepisodes .mobileintro{
+        width:270px;
+
+        /* background-color: white; */
+    }
+    .recentepisodes .introduction,.allepisodes .introduction{
+    font-size: 13px;
+    }  
 }
