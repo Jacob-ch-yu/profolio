@@ -494,7 +494,7 @@ footer{
 /*test test test test test test test test test test test */
 /*test test test test test test test test test test test */
 
-legend h2{
+fieldset h2{
     font-size: 20pt; 
     margin-top: 30px;
     margin-bottom: 0px;
@@ -541,8 +541,10 @@ fieldset button{
     border: none;
     cursor: pointer;
     width:100%;
+}
 
-    
+.cta{
+    text-decoration: none;
 }
 
 body, html {
