@@ -703,7 +703,7 @@ body, html {
 }
 
 @media (prefers-reduced-motion) {
-    #herologo {
+    .img1 #herologo {
       animation-name: dissolve;
     }
   }
